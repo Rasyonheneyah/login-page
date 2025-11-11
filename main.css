@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    height: 8.0vh;
+    background-color: burlywood;
+}
+
+
+#hlogtit{
+    height: 100%;
+    display: flex;
+    
+    justify-content: center;
+    gap: 15px;
+
+    align-items: center;
+}
+#hlogtit div#hlogo{
+    background-image: url(./image/livroazul.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+}
+div#htitulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-shadow: 1px 2px 3px #b3c0e6;
+    color:#4169E1;
+    
+
+}
+
+main{
+    background-color: antiquewhite;
+    width: inherit;
+    height: inherit;
+    padding: 50px 0;
+}
+
+div#page-login{
+    min-width: 250px;
+    border: 1px solid black;
+    min-height: 300px;
+    background-color: white;
+    padding: 20px;
+    margin: auto auto;
+    
+}
+div#page-login h1.login-title{
+    text-align: center;
+    padding: 5px;
+}
+
+
+form#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: scretc;
+    width: 70%;
+    margin: auto;
+    align-content: center;
+    min-height: 200px;
+} 
+
+div.campo-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    padding: 1px 25px;
+     border-radius: 15px;
+}
+form#login-form div.campo-form:focus{
+    background-color: gray;
+}
+
+.campo-form .material-symbols-outlined{
+    
+    padding: 2.5px;
+}
+div.campo-form label{
+    color: #ff8c0085;
+}
+
+.campo-form input.input-login{
+    padding: 5.5px;
+    border: 0;
+
+}
+.campo-form input.input-login:focus{
+    outline: 0;
+}
+div#userpassword{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+     min-height: 100px;
+}
+
+div#page-login div#remembercx{
+    display: block;
+     margin: auto;
+    padding: 2px;
+    width: fit-content;
+}
+
+#login-button{
+    display: flex;
+    min-width: 70%;
+    padding: 5px 0;
+    margin: auto auto;
+    background-color: #ff8c0085;
+}
+
+#remembercx, #login-button, label[for='remember']{
+    cursor: pointer;
+}

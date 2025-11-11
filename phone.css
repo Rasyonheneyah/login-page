@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Azul CLARO*/
+
+/* 
+Paleta de Azuis para Login / Site
+
+1. Azul Claro (fundo)    - #00BFFF  → Fundo do container de login
+2. Azul Botão            - #1E90FF  → Botão principal
+3. Azul Escuro           - #104E8B  → Hover do botão ou detalhes
+4. Azul Céu              - #87CEFA  → Fundo suave alternativo
+5. Azul Tiffany          - #40E0D0  → Highlights ou bordas
+6. Azul Médio            - #4682B4  → Textos ou elementos secundários
+7. Azul Royal            - #4169E1  → Destaques importantes
+8. Azul Marinho          - #000080  → Textos ou sombras escuras
+*/
+
+
+@media screen and (max-width: 768px  ) {
+    header{
+        color: black;
+    }
+
+    div#page-login{
+        width: 50vw;
+
+    }
+    
+    #login-button{
+        color: black;
+    }
+}

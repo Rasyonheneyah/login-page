@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#page-login{
+    width: 90vw;
+    justify-content: end;
+}
+
+
+form#login-form, .login-title{
+    width: 45vw;
+    
+}
