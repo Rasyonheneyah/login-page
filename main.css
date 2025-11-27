@@ -65,25 +65,53 @@ div#page-login{
     border: 1px solid black;
     min-height: 300px;
     background-color: white;
-    padding: 20px;
     margin: auto auto;
-    
+    display: flex;
+
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
 }
+
+.image-login{
+    border-right: 1px solid rgba(0, 0, 0, 0.315);
+    height: 320px;
+    width: 250px;
+    border-radius: 15px 0px 0px 15px;
+
+ 
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    background-color: gray;
+    cursor: pointer;
+}
+
+
 div#page-login h1.login-title{
     text-align: center;
-    padding: 5px;
+    padding: 40px 5px 0px 0px;
 }
+
 
 
 form#login-form {
     display: flex;
     flex-direction: column;
     justify-content: scretc;
-    width: 70%;
     margin: auto;
     align-content: center;
     min-height: 200px;
 } 
+#login-form, .image-login{
+    padding: 20px;
+}
+
+.login-sec{
+       border-radius: 0px 15px 15px 0px;
+
+}
 
 div.campo-form{
     display: flex;
@@ -91,8 +119,11 @@ div.campo-form{
     align-items: center;
 
     border: 1px solid black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.164);
     padding: 1px 25px;
      border-radius: 15px;
+    width: 150px;
+    margin: auto;
 }
 form#login-form div.campo-form:focus{
     background-color: gray;
@@ -132,10 +163,16 @@ div#page-login div#remembercx{
 
 #login-button{
     display: flex;
-    min-width: 70%;
-    padding: 5px 0;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
     margin: auto auto;
     background-color: #ff8c0085;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.199);
+}
+#login-button:hover{
+    background-color: #ff8c00b6;
+    te
 }
 
 #remembercx, #login-button, label[for='remember']{

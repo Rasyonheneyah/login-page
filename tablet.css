@@ -1,12 +1,24 @@
 @charset "UTF-8";
 
 #page-login{
-    width: 90vw;
-    justify-content: end;
+    justify-content: center;
+    max-width: 575px;
+    border-radius: 15px;
+    
 }
 
 
+
 form#login-form, .login-title{
-    width: 45vw;
+    color: black;
     
+}
+
+.image-login{
+        background-image: url(image/loginimage/logintablet.png);
+        display: block;
+        
+}
+#page-login .login-sec, #page-login .image-login {
+    width: 50%;
 }
