@@ -72,6 +72,11 @@ div#page-login{
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
 }
 
+.login-title{
+    color: #ff8c00;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
+}
+
 .image-login{
     border-right: 1px solid rgba(0, 0, 0, 0.315);
     height: 320px;
@@ -172,7 +177,7 @@ div#page-login div#remembercx{
 }
 #login-button:hover{
     background-color: #ff8c00b6;
-    te
+    
 }
 
 #remembercx, #login-button, label[for='remember']{
