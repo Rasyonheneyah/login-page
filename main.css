@@ -90,7 +90,7 @@ div#page-login{
 
 .image-login{
     border-right: 1px solid rgba(0, 0, 0, 0.315);
-    height: 320px;
+    height: inherit;
     width: 250px;
     border-radius: 15px 0px 0px 15px;
 
@@ -125,7 +125,8 @@ form#login-form {
 }
 
 .login-sec{
-       border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 15px 15px 0px;
+    
 
 }
 
@@ -182,9 +183,11 @@ div#page-login div#remembercx{
     padding: 0.5em 1em;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.253);
-    margin: auto auto;
+    margin: 7.5px auto 0px;
     background-color: #ff8c0085;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.199);
+
+
 }
 #login-button:hover{
     background-color: #ff8c00b6;
@@ -194,3 +197,21 @@ div#page-login div#remembercx{
 #remembercx, #login-button, label[for='remember']{
     cursor: pointer;
 }
+
+.forgotpassword{
+    font-size: 11px;
+    margin: 10px;
+    text-align: center;
+    line-height: 22.0px;
+}
+.forgotpassword a {
+    color: rgba(86, 86, 86, 0.768); 
+    
+
+}
+.forgotpassword a:hover {
+    color: rgba(155, 126, 80, 0.768); 
+
+}
+
+
