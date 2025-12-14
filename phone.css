@@ -23,11 +23,19 @@ Paleta de Azuis para Login / Site
 
     div#page-login{
         width: 50vw;
-
+  
     }
-    div.login-sec{
+    div#page-login div.login-sec {
+        width: inherit;
+        margin: auto;
+    }
+    form#login-form{
+        width: inherit;
+        padding:  0px;
+    }
+    div#userpassword {
         width: 100%;
-    }
+     }
     
     #login-button{
         color: black;

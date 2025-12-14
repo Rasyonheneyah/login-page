@@ -22,10 +22,27 @@ html, body{
 }
 
 header{
+    display: block;
     height: 8.0vh;
     background-color: burlywood;
+    max-height: max-content;
 }
 
+button#hamburguer{
+    background-color: inherit ;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+}
+#burguer{
+    color: #361e00;
+    text-shadow: 1px 1px  #0000002d;
+    
+}
+button#hamburguer #burguer:hover{
+    color: #ff8e04;
+    text-shadow: 1px 1PX 5PX #ffffff5d;
+}
 
 #hlogtit{
     height: 100%;
@@ -48,22 +65,63 @@ header{
 div#htitulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
-    text-shadow: 1px 2px 3px #b3c0e6;
-    color:#4169E1;
+    text-shadow: 1px 2px 3px #361e0063;
+    color:#361e00;
     
 
 }
+#menu{
+    position: relative;
+    background-color: #c29e6e;
+    padding: 10px 5px;
+    display: none;
+    box-shadow: 1px 1px 1px #31281c89;
 
+}
+ul#menu-list{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 25px;
+    align-content: space-between;
+}
+.menu-item{
+    display: flex;
+    align-content: space-between;
+    
+    
+    
+}
+.menu-item a{
+    color: black;
+    text-shadow: 1px 1px 3px #0000004a;
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.menu-item a:hover{
+    color: #623600;
+}
+a{
+    text-decoration: none;
+    
+}
+.show{
+    display: block !important;
+    
+}
 main{
     display: flex;
-
+    
+    width: inherit;
+    height: inherit;
+    
     justify-content: center;
     align-items: center;
-    
-    width: 100%;
-    height: 100%;
 
-
+    position: static;
 }
 
 div#page-login{
@@ -115,7 +173,7 @@ div#page-login h1.login-title{
 form#login-form {
     display: flex;
     flex-direction: column;
-    justify-content: scretc;
+    
     margin: auto;
     align-content: center;
     min-height: 200px;
@@ -184,13 +242,13 @@ div#page-login div#remembercx{
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.253);
     margin: 7.5px auto 0px;
-    background-color: #ff8c0085;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.199);
-
-
+    
+    background-color: #ff8c00b6;
+    
 }
 #login-button:hover{
-    background-color: #ff8c00b6;
+    background-color: #ff8c0085;
     
 }
 
@@ -206,6 +264,7 @@ div#page-login div#remembercx{
 }
 .forgotpassword a {
     color: rgba(86, 86, 86, 0.768); 
+    text-decoration: underline;
     
 
 }

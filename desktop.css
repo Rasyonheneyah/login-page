@@ -4,15 +4,28 @@
 
 
 div#page-login {
-    max-width: 750px;
-    max-width: 675px;
+    min-width: 800px;
+    width: 50%;
+    min-height: 500px;
     border-radius: 15px;
 }
 #page-login .login-sec, #page-login .image-login {
     width: 50%;
 }
+.login-sec, #login-form{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .image-login{
     background-image: url(image/loginimage/logindesktop.png);
+}
+.login-title{
+    margin-top: 20px;
+}
+form#login-form{
+    gap: 30px;
+    margin-top: 10px;
+
 }
