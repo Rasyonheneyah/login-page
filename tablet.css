@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#page-login{
+#page-login {
     justify-content: center;
     max-width: 575px;
     border-radius: 15px;
@@ -16,6 +16,14 @@
         display: block;
         
 }
-#page-login .login-sec, #page-login .image-login {
+#page-login .login-sec, #page-login .image-login{
     width: 50%;
+}
+
+/* MAIN DO REGISTER */
+
+#main-register{
+    min-width: 500px;
+    width: 75vw;
+    
 }

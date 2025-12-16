@@ -43,4 +43,13 @@ Paleta de Azuis para Login / Site
     .image-login{
         display: none;
     }
+
+
+    /* MAIN DO REGISTER */
+
+    #main-register{
+        width: 95vw;
+        
+    
+    }
 }

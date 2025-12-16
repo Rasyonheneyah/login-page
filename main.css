@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body main#main-login{
+    display: none;
+}
+
 
 * {
     margin: 0;
@@ -19,6 +23,7 @@ html, body{
     width: 100vw;
     height: 100vh;
     background-color: antiquewhite;
+    margin: 0;
 }
 
 header{
@@ -112,7 +117,7 @@ a{
     display: block !important;
     
 }
-main{
+main#main-login{
     display: flex;
     
     width: inherit;
@@ -124,7 +129,7 @@ main{
     position: static;
 }
 
-div#page-login{
+div#page-login {
     min-width: 250px;
     border: 1px solid black;
     min-height: 300px;
@@ -274,3 +279,48 @@ div#page-login div#remembercx{
 }
 
 
+/* MAIN DO REGISTER */
+
+#main-register{
+    display: flex;
+    background-color: white;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.259);
+    border-radius: 15px;    
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.382);
+    height: 0px;
+    min-height: 600px;
+    
+    padding: 10px 30px;
+
+}
+#btn-return{
+    background-color: transparent;
+    border: none;
+    color: rgb(28, 28, 28);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.522);
+    padding-bottom: 15px;
+    
+}
+#main-register h1{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#register-campos{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 18px;
+    
+    width: 100%;
+
+
+    margin-top: 30px;
+    align-content: space-between;
+}
+#register-campos input {
+    padding: 1px 5px;
+    border-radius: 12px;
+
+
+}

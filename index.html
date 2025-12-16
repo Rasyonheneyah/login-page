@@ -74,7 +74,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-login">
 
         <div id="page-login">
             <div class="image-login">
@@ -116,6 +116,36 @@
             </div>
         </div>
 
+
+    </main>
+
+    <main id="main-register">
+        <form action="register.json" autocomplete="on" >
+            <button id="btn-return"> <span style="font-size: 30px; font-weight: 900;" class="material-symbols-outlined"> arrow_back </span> </button>
+            
+                <h1>Registre uma nova conta</h1>
+                <div id="register-campos">
+                    <div>
+                        <label for="newuser">Nome: </label>
+                        <input type="text" name="newuser" id="newuser" required minlength="5" maxlength="12" autocomplete="username" pattern="[A-Za-z]{1}[A-Za-z0-9]{4,11}" placeholder=" username " title="Use de 5 a 12 caracteres, apenas letras e números. O primeiro caractere deve ser uma letra." size="15">
+                    </div>
+                    <div>
+                        <label for="newpassword1">Senha: </label>
+                        <input type="password" name="newpassword1" id="newpassword1" required minlength="8" maxlength="16" required autocomplete="current-password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z0-9]{8,16}" placeholder="********"
+                            title="Use de 8 a 16 caracteres, apenas letras e números." size="15">
+                    </div>
+                    <div>    
+                        <label for="newpassword2">Repita a senha: </label>
+                        <input type="password" name="newpassword2" id="newpassword2" required minlength="8" maxlength="16" required autocomplete="off"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z0-9]{8,16}" placeholder="********"
+                            title="Use de 8 a 16 caracteres, apenas letras e números." size="15">
+                    </div>
+                    <div>
+                        <label for="newday">Data de Nascimento: </label>
+                        <input type="month" name="newday" id="newday" required>
+                    </div>
+                </div>
+            
+        </form>  
 
     </main>
 

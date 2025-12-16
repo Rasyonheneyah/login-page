@@ -29,3 +29,11 @@ form#login-form{
     margin-top: 10px;
 
 }
+
+/* MAIN DO REGISTER */
+
+#main-register{
+    width: 50vw;   
+    max-width: 500px;
+    
+}
