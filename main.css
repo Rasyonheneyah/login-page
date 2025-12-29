@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body main#main-login{
+body main#main-register{
     display: none;
 }
 
@@ -114,27 +114,17 @@ a{
     
 }
 .show{
-    display: block !important;
+    display: flex !important;
     
 }
-main#main-login{
-    display: flex;
-    
-    width: inherit;
-    height: inherit;
-    
-    justify-content: center;
-    align-items: center;
 
-    position: static;
-}
 
-div#page-login {
+main#page-login {
     min-width: 250px;
     border: 1px solid black;
     min-height: 300px;
     background-color: white;
-    display: flex;
+    display: none;
 
     width: 100em;
 
@@ -168,7 +158,7 @@ div#page-login {
 }
 
 
-div#page-login h1.login-title{
+main#page-login h1.login-title{
     text-align: center;
     padding: 40px 5px 0px 0px;
 }
@@ -236,7 +226,7 @@ div#userpassword{
      min-height: 100px;
 }
 
-div#page-login div#remembercx{
+main#page-login div#remembercx{
     display: block;
      margin: auto;
     padding: 2px;
@@ -284,7 +274,7 @@ div#page-login div#remembercx{
 /* MAIN DO REGISTER */
 
 #main-register{
-    display: flex;
+    display: none;
     background-color: white;
     margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.259);
@@ -305,8 +295,12 @@ div#page-login div#remembercx{
     padding-bottom: 15px;
     
 }
+#btn-return:hover{
+    color: rgba(0, 0, 0, 0.338);
+}
 #main-register h1{
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
+
     
 }
 #register-campos{
@@ -326,4 +320,12 @@ div#page-login div#remembercx{
     border-radius: 12px;
 
 
+}
+
+.divcentral{
+    display: flex;
+    height: 92%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }

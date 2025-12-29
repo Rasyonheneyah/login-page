@@ -5,7 +5,7 @@
   imediatamente (event bubbling).
  */
 
-function showMenu(id, event) {
+function showDiv(id, event) {
     event.stopPropagation();
     const dshow = document.getElementById(id)
     dshow.classList.toggle(`show`)
@@ -13,6 +13,13 @@ function showMenu(id, event) {
      
 }
 
+const areaRegister = window.document.getElementById(`main-register`)
+const areaLogin = document.getElementById(`page-login`)
+
+function openRegisterToLogin() {
+    areaRegister.classList.toggle(`show`)
+    areaLogin.classList.toggle(`show`)
+}
 
 /*
   Listener global.

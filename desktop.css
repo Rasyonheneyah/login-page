@@ -3,13 +3,14 @@
 
 
 
-div#page-login {
+main#page-login {
     min-width: 800px;
-    width: 50%;
+     
     min-height: 500px;
     border-radius: 15px;
+    height: 50%;
 }
-#page-login .login-sec, #page-login .image-login {
+main#page-login , #page-login .login-sec, #page-login .image-login {
     width: 50%;
 }
 .login-sec, #login-form{
@@ -20,6 +21,8 @@ div#page-login {
 
 .image-login{
     background-image: url(image/loginimage/logindesktop.png);
+    height: 92%;
+ 
 }
 .login-title{
     margin-top: 20px;

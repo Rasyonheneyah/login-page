@@ -20,11 +20,11 @@ Paleta de Azuis para Login / Site
         color: black;
     }
 
-    div#page-login{
+    main#page-login{
         width: 50vw;
   
     }
-    div#page-login div.login-sec {
+    main#page-login div.login-sec {
         width: inherit;
         margin: auto;
     }

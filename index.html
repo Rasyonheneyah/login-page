@@ -26,7 +26,7 @@
             para que a propagação seja interrompida
             (evita abrir e fechar no mesmo clique).
 -->
-            <button id="hamburguer" onclick="showMenu(`menu`, event)">
+            <button id="hamburguer" onclick="showDiv(`menu`, event)">
                 
                 
                 
@@ -74,14 +74,10 @@
         </nav>
     </header>
 
-    <main id="main-login">
-
-        <div id="page-login">
-            <div class="image-login">
-
-            </div>
-
-                
+    <div class="divcentral">
+        <main id="page-login" class="show">
+            <div class="image-login">    </div>
+        
             <div class="login-sec">
                 <h1 class="login-title">Login</h1>
                 <form id="login-form" action="login.json" method="post" autocomplete="on">
@@ -107,56 +103,50 @@
                     <div>
                         <input id="login-button" type="submit" value="Login">
                     </div>
-
                     <div class="forgotpassword">
-                        <a href="#">Esqueci a senha</a>     <br>
-                        <a href="#">Registrar-se</a>
+                        <a href="#" >Esqueci a senha</a>     <br>
+                        <a href="#" onclick="openRegisterToLogin()">Registrar-se</a>
                     </div>
                 </form>
-            </div>
-        </div>
-
-
-    </main>
-
-    <main id="main-register">
-        <form action="register.json" autocomplete="on" >
-            <button id="btn-return"> <span style="font-size: 30px; font-weight: 900;" class="material-symbols-outlined"> arrow_back </span> </button>
-            
-                <h1>Registre uma nova conta</h1>
-                <div id="register-campos">
-                    <div>
-                        <label for="newuser">Nome: </label>
-                        <input type="text" name="newuser" id="newuser" required minlength="5" maxlength="12" autocomplete="username" pattern="[A-Za-z]{1}[A-Za-z0-9]{4,11}" placeholder=" username " title="Use de 5 a 12 caracteres, apenas letras e números. O primeiro caractere deve ser uma letra." size="15">
-                    </div>                    
-                    <div>
-                        <label for="newemail">Email: </label>
-                        <input type="email" name="newemail" id="newemail" required  maxlength="254" autocomplete="email" pattern="^[A-Za-z0-9._%+-]{1,64}@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}$" placeholder=" example@mail.com " title="Email inválido. Use letras, números e . _ % + -. Ex: usuario@email.com"
-                         size="25">
+            </div>     
+        </main>
+        <main id="main-register" class="">
+            <form action="register.json" autocomplete="on" >
+                <button id="btn-return" onclick="openRegisterToLogin()"> <span style="font-size: 30px; font-weight: 900;" class="material-symbols-outlined"> arrow_back </span> </button>
+        
+                    <h1>Registre uma nova conta</h1>
+                    <div id="register-campos">
+                        <div>
+                            <label for="newuser">Nome: </label>
+                            <input type="text" name="newuser" id="newuser" required minlength="5" maxlength="12" autocomplete="username" pattern="[A-Za-z]{1}[A-Za-z0-9]{4,11}" placeholder=" username " title="Use de 5 a 12 caracteres, apenas letras e números. O primeiro caractere deve ser uma letra." size="15">
+                        </div>
+                        <div>
+                            <label for="newemail">Email: </label>
+                            <input type="email" name="newemail" id="newemail" required  maxlength="254" autocomplete="email" pattern="^[A-Za-z0-9._%+-]{1,64}@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}$" placeholder=" example@mail.com " title="Email inválido. Use letras, números e . _ % + -. Ex: usuario@email.com"
+                             size="25">
+                        </div>
+                        <div>
+                            <label for="newpassword1">Senha: </label>
+                            <input type="password" name="newpassword1" id="newpassword1" required minlength="8" maxlength="16" required autocomplete="current-password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z0-9]{8,16}" placeholder="********"
+                                title="Use de 8 a 16 caracteres, apenas letras e números." size="15">
+                        </div>
+                        <div>
+                            <label for="newpassword2">Repita a senha: </label>
+                            <input type="password" name="newpassword2" id="newpassword2" required minlength="8" maxlength="16" required autocomplete="off"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z0-9]{8,16}" placeholder="********"
+                                title="Use de 8 a 16 caracteres, apenas letras e números." size="15">
+                        </div>
+                        <div>
+                            <label for="newday">Data de Nascimento: </label>
+                            <input type="date" name="newday" id="newday" required>
+                        </div>
                     </div>
                     <div>
-                        <label for="newpassword1">Senha: </label>
-                        <input type="password" name="newpassword1" id="newpassword1" required minlength="8" maxlength="16" required autocomplete="current-password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z0-9]{8,16}" placeholder="********"
-                            title="Use de 8 a 16 caracteres, apenas letras e números." size="15">
+                            <input id="login-button" type="submit" value="Registrar" style="margin: 20px 0px; padding: 10px 50px;">
                     </div>
-                    <div>    
-                        <label for="newpassword2">Repita a senha: </label>
-                        <input type="password" name="newpassword2" id="newpassword2" required minlength="8" maxlength="16" required autocomplete="off"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z0-9]{8,16}" placeholder="********"
-                            title="Use de 8 a 16 caracteres, apenas letras e números." size="15">
-                    </div>
-                    <div>
-                        <label for="newday">Data de Nascimento: </label>
-                        <input type="date" name="newday" id="newday" required>
-                    </div>
-                </div>
-                <div>
-                        <input id="login-button" type="submit" value="Registrar" style="margin: 20px 0px; padding: 10px 50px;">
-                </div>
-
-            
-        </form>  
-
-    </main>
+        
+            </form>
+        </main>
+    </div>
 
     <script>
         const dataNiver = document.getElementById(`newday`)
