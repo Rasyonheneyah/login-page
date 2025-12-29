@@ -27,13 +27,7 @@ div#page-login {
 form#login-form{
     gap: 30px;
     margin-top: 10px;
-
+    
 }
 
 /* MAIN DO REGISTER */
-
-#main-register{
-    width: 50vw;   
-    max-width: 500px;
-    
-}

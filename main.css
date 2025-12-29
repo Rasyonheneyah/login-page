@@ -182,6 +182,8 @@ form#login-form {
     margin: auto;
     align-content: center;
     min-height: 200px;
+
+    width: 100%;
 } 
 #login-form, .image-login{
     padding: 20px;
@@ -288,9 +290,10 @@ div#page-login div#remembercx{
     border: 1px solid rgba(0, 0, 0, 0.259);
     border-radius: 15px;    
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.382);
-    height: 0px;
-    min-height: 600px;
     
+    max-width: 550px !important;
+    min-height: 400px;
+    width: 575px;
     padding: 10px 30px;
 
 }

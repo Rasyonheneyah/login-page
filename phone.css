@@ -15,7 +15,6 @@ Paleta de Azuis para Login / Site
 8. Azul Marinho          - #000080  → Textos ou sombras escuras
 */
 
-
 @media screen and (max-width: 768px  ) {
     header{
         color: black;
@@ -35,7 +34,7 @@ Paleta de Azuis para Login / Site
     }
     div#userpassword {
         width: 100%;
-     }
+    }
     
     #login-button{
         color: black;
@@ -48,7 +47,7 @@ Paleta de Azuis para Login / Site
     /* MAIN DO REGISTER */
 
     #main-register{
-        width: 95vw;
+        width: 80%;
         
     
     }

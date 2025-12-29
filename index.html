@@ -128,6 +128,11 @@
                     <div>
                         <label for="newuser">Nome: </label>
                         <input type="text" name="newuser" id="newuser" required minlength="5" maxlength="12" autocomplete="username" pattern="[A-Za-z]{1}[A-Za-z0-9]{4,11}" placeholder=" username " title="Use de 5 a 12 caracteres, apenas letras e números. O primeiro caractere deve ser uma letra." size="15">
+                    </div>                    
+                    <div>
+                        <label for="newemail">Email: </label>
+                        <input type="email" name="newemail" id="newemail" required  maxlength="254" autocomplete="email" pattern="^[A-Za-z0-9._%+-]{1,64}@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}$" placeholder=" example@mail.com " title="Email inválido. Use letras, números e . _ % + -. Ex: usuario@email.com"
+                         size="25">
                     </div>
                     <div>
                         <label for="newpassword1">Senha: </label>
@@ -141,13 +146,26 @@
                     </div>
                     <div>
                         <label for="newday">Data de Nascimento: </label>
-                        <input type="month" name="newday" id="newday" required>
+                        <input type="date" name="newday" id="newday" required>
                     </div>
                 </div>
+                <div>
+                        <input id="login-button" type="submit" value="Registrar" style="margin: 20px 0px; padding: 10px 50px;">
+                </div>
+
             
         </form>  
 
     </main>
+
+    <script>
+        const dataNiver = document.getElementById(`newday`)
+        const dataAtual = new Date()
+        dataNiver.max = `${dataAtual().getFullYear() - 13}-12-31`
+        dataNiver.min = `1900`
+
+    
+    </script>
 
     <script src="script.js"></script>
 </body>
